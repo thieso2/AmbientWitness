@@ -12,7 +12,7 @@
     <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
     <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
     <enclosure
-        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.1.1/Ambient Witness-0.1.1-macOS.zip"
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.1.1/Ambient.Witness-0.1.1-macOS.zip"
         sparkle:edSignature="EwzRe43zhD6BkSJ3zzaf/15qAgoKmLriS8BtxxeEiyP+FfN7awWyS/4Alzw7zcKvw4YSjl58AffMkHfRgqu2CA=="
         length="12810305"
         type="application/octet-stream" />
@@ -24,7 +24,7 @@
     <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
     <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
     <enclosure
-        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.2.0/Ambient Witness-0.2.0-macOS.zip"
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.2.0/Ambient.Witness-0.2.0-macOS.zip"
         sparkle:edSignature="+4qWEDqfgOCseh+feF/0RjiA2fT22C/wvb43zkzwf84qHhQYXC7tF9B3jqR4DhnVzInrhKy8567czGoYjO1kAQ=="
         length="12810348"
         type="application/octet-stream" />
