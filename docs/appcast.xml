@@ -5,5 +5,17 @@
         <link>https://github.com/thieso2/AmbientWitness</link>
         <description>Ambient Witness update feed</description>
         <language>en</language>
+            <item>
+    <title>Version 0.1.1</title>
+    <pubDate>Wed, 18 Mar 2026 17:45:24 +0000</pubDate>
+    <sparkle:version>4</sparkle:version>
+    <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.1.1/Ambient Witness-0.1.1-macOS.zip"
+        sparkle:edSignature="EwzRe43zhD6BkSJ3zzaf/15qAgoKmLriS8BtxxeEiyP+FfN7awWyS/4Alzw7zcKvw4YSjl58AffMkHfRgqu2CA=="
+        length="12810305"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
