@@ -185,5 +185,17 @@
         length="15030806"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.14</title>
+    <pubDate>Fri, 20 Mar 2026 20:13:29 +0000</pubDate>
+    <sparkle:version>20</sparkle:version>
+    <sparkle:shortVersionString>0.3.14</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.14/Ambient.Witness-0.3.14-macOS.zip"
+        sparkle:edSignature="rTZxzeCXWnhjEHubrMeQFtaOXJspaJEYro+l/Bc1/jgAzuISvzB1RY8LdaVjUYNR5OHVtdKR3gTNAbUbicvOAg=="
+        length="15039627"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
