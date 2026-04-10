@@ -714,5 +714,18 @@
         length="20111256"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.74</title>
+    <description><![CDATA[<p>Bug fixes and improvements.</p>]]></description>
+    <pubDate>Fri, 10 Apr 2026 12:21:04 +0000</pubDate>
+    <sparkle:version>89</sparkle:version>
+    <sparkle:shortVersionString>0.3.74</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.74/Ambient.Witness-0.3.74-macOS.zip"
+        sparkle:edSignature="cAQkEqEhZWL+vNwVXxjUhacKZoVUtEM89tG7/JHxtexGcAmb2yruIjcUzXTivlIUCrIsZHiwc4ilyHk+kw2fDg=="
+        length="20115737"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
