@@ -740,5 +740,35 @@
         length="20115716"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.76</title>
+    <description><![CDATA[<h2>What&#x27;s New in v0.3.76</h2>
+
+<h3>Shared Image File Sync</h3>
+<p>Shared images from iPhone now sync to your Mac as files (not just metadata). Stored at <code>phones/{device}/shared-images/{date}/</code>. Supports HEIC, JPEG, PNG, WebP, GIF — original format preserved, no re-encoding.</p>
+
+<h3>Per-Table Sync Error Isolation</h3>
+<p>A missing table on the Mac (e.g., before migration runs) no longer fails the entire sync batch. Other tables sync normally, and failed tables retry next cycle.</p>
+
+<h3>Share Extension Fixes</h3>
+<li>No more full-screen overlay — extension is invisible, dismisses instantly</li>
+<li>Image sharing works: detects format from file headers, loads all UTI types</li>
+<li>Swipe-to-delete in Shared Items list (removes DB row + image file)</li>
+
+<h3>Sparkle Changelog Fix</h3>
+<p>Release notes now appear in the macOS update dialog (was showing &quot;Bug fixes and improvements&quot; due to wrong auth token).</p>
+
+<h3>CI: Raw xcodebuild</h3>
+<p>Switched from <code>tuist xcodebuild</code> to raw <code>xcodebuild</code> for better DerivedData cache reuse and parallel compilation.</p>]]></description>
+    <pubDate>Fri, 10 Apr 2026 14:17:30 +0000</pubDate>
+    <sparkle:version>91</sparkle:version>
+    <sparkle:shortVersionString>0.3.76</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.76/Ambient.Witness-0.3.76-macOS.zip"
+        sparkle:edSignature="Z+RXnnBWVLQrlyAKg6FzCRt5R06d4FE5oSzZVrQqLQd9YsdGKUNfFB9tfgtA9EyM3uOa8BxBgySTNGgIKzg2AA=="
+        length="20120002"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
