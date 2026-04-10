@@ -770,5 +770,30 @@
         length="20120002"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.77</title>
+    <description><![CDATA[<h2>What&#x27;s New</h2>
+
+<h3>Browser Extension Testing (87 Playwright tests)</h3>
+<li>Full Chromium test suite: lifecycle, tab/nav events, content script interactions (click, input, scroll, selection, reading sessions), URL policy, dashboard UI, video tracking, queue management, sendToHost fallback, browsing trees, settings persistence, delivery pipeline e2e</li>
+<li>Safari-mode test suite: loads extension with Safari feature flags in Chromium to verify queue cap (50), disabled APIs, <code>delivery.source = &quot;safariExtension&quot;</code></li>
+<li>Runs headless via <code>--headless=new</code></li>
+
+<h3>Browser Extension</h3>
+<li><code>sendToHost</code> abstraction for Safari/Chromium parity — falls back to <code>chrome.storage.local</code> when iOS Safari&#x27;s service worker is suspended</li>
+
+<h3>iOS Location Tracking</h3>
+<li><b>Location state log table</b> — records every GPS decision (motion debounce, GPS start/stop, span open/close, system pause/resume, auth changes) for debugging geo gaps</li>
+<li>Syncs to Mac for remote analysis via MCP</li>]]></description>
+    <pubDate>Fri, 10 Apr 2026 19:00:52 +0000</pubDate>
+    <sparkle:version>92</sparkle:version>
+    <sparkle:shortVersionString>0.3.77</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.77/Ambient.Witness-0.3.77-macOS.zip"
+        sparkle:edSignature="wPUiUSHJrZVZt3vLeG7/IXIYarGrEdLHiRbDd2B7/9DBrmw8bA5VpdYDhG2pdDayavPjgjmEZ4KYi+tY4DyNCA=="
+        length="20122377"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
