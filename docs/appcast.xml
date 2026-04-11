@@ -958,5 +958,34 @@
         length="20184494"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.88</title>
+    <description><![CDATA[<h2>Pedometer-driven GPS control (iOS)</h2>
+
+<p>GPS is now off by default and only activates when the pedometer detects movement:</p>
+<li>Starts in low-power mode (significant location changes only, no GPS drain)</li>
+<li>Pedometer (CMPedometer) is the primary movement signal — &gt;5 steps/min activates GPS</li>
+<li>CMMotionActivity only used for automotive/cycling detection</li>
+<li>Stationary debounce reduced from 120s to 30s, moving debounce from 5s to 3s</li>
+<li><code>motionUpdate</code> logging throttled to 1 per 60 seconds (was every callback)</li>
+<li>New debug fields in <code>locationStateLogs</code>: <code>stepsPerMinute</code>, <code>speed</code></li>
+
+<p>Expected: GPS active time drops from ~24h/day to actual movement periods only. locationStateLogs volume drops ~95%.</p>
+
+<h2>Other fixes</h2>
+
+<li>Add <code>locationStateLogs</code> table to Mac phone sync schema (v4 migration)</li>
+<li>Add <code>locationStateLogs</code> to server sync accepted tables</li>
+<li>Fix infinite sync push loop when server doesn&#x27;t return cursor for a pushed table</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 21:17:06 +0000</pubDate>
+    <sparkle:version>107</sparkle:version>
+    <sparkle:shortVersionString>0.3.88</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.88/Ambient.Witness-0.3.88-macOS.zip"
+        sparkle:edSignature="J+RgsffyNjBEuePg/YYbpUqtEVmE1AOrd8udHaIbKs8LeBV6+AIOCHu6p1rV/6XtfA3OHUlkF6ri1SAgJCjtDg=="
+        length="20184746"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
