@@ -942,5 +942,21 @@
         length="20183817"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.87</title>
+    <description><![CDATA[<h2>Fix</h2>
+
+<li>Add <code>locationStateLogs</code> to server sync accepted tables — the migration created the table but the push handler still rejected it</li>
+<li>Fix infinite sync push loop when the server doesn&#x27;t return a cursor for a pushed table</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 20:50:08 +0000</pubDate>
+    <sparkle:version>106</sparkle:version>
+    <sparkle:shortVersionString>0.3.87</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.87/Ambient.Witness-0.3.87-macOS.zip"
+        sparkle:edSignature="wQuF/IX/ZPq8KVuLtha6FP9c73Jv/IDlBFwazg9b0nsRkaPynNIwK6QbUObxcJPT7behLu31p1g34MsY///iBw=="
+        length="20184494"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
