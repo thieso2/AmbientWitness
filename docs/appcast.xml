@@ -850,5 +850,31 @@
         length="20176954"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.80</title>
+    <description><![CDATA[<h2>OAuth 2.1 authentication for MCP server</h2>
+
+<p>The MCP server now supports GitHub-based OAuth 2.1 authentication following the MCP spec. The server acts as both Resource Server and Authorization Server facade, proxying identity to GitHub via Authorization Code + PKCE.</p>
+
+<h3>Setup</h3>
+<p>1. Create a GitHub OAuth App at https://github.com/settings/developers</p>
+<p>2. Set callback URL to <code>{publicBaseURL}/callback</code></p>
+<p>3. Configure Client ID, Client Secret, and Allowed Users in the Mac app MCP settings (or via CLI flags)</p>
+
+<p>OAuth is opt-in — without credentials, the server runs without auth.</p>
+
+<h3>Also included</h3>
+<li>Fix browsing tree fields never reaching the database (v0.3.78)</li>
+<li>Fix CI caching: warm caches on main branch pushes</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 14:42:06 +0000</pubDate>
+    <sparkle:version>98</sparkle:version>
+    <sparkle:shortVersionString>0.3.80</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.80/Ambient.Witness-0.3.80-macOS.zip"
+        sparkle:edSignature="yuSrX5CePi+OH8qPteoM8Hux5QQFrH3YeyOV9HMmW+APl2kgkh1tZBzH5vOSUXZ9020M94p3NtQpTsXnF7aEAg=="
+        length="20176776"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
