@@ -920,5 +920,27 @@
         length="20183856"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.83</title>
+    <description><![CDATA[<h2>MCP server security</h2>
+
+<li><b>OAuth is now required</b> for HTTP transport — the server refuses to start without <code>--github-client-id</code>, <code>--github-client-secret</code>, and <code>--public-base-url</code></li>
+<li>Remove auto session approval — only OAuth-authenticated clients can create MCP sessions</li>
+<li>Fix bearer validator being dropped on session reset (previously bypassed OAuth after reconnect)</li>
+<li>Strip trailing slash from <code>--public-base-url</code> to prevent double-slash metadata URLs</li>
+
+<h2>Documentation</h2>
+
+<li>Document the two independent auth mechanisms (OAuth for MCP, bearer token for phone sync) in CLAUDE.md</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 19:33:29 +0000</pubDate>
+    <sparkle:version>102</sparkle:version>
+    <sparkle:shortVersionString>0.3.83</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.83/Ambient.Witness-0.3.83-macOS.zip"
+        sparkle:edSignature="OCWsrp9ahFW+J6hQIt7jLzhDpGTrj7A+5kdeAQ89izMO/mxNFWeHFu4a6ImIvcgm0/gr43cqh448M5g+UPyCBw=="
+        length="20183817"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
