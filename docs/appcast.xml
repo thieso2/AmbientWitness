@@ -795,5 +795,30 @@
         length="20122377"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.78</title>
+    <description><![CDATA[<h2>Fix browsing tree tracking</h2>
+
+<p>The <code>browsing_tree_id</code>, <code>parent_tab_id</code>, and <code>tree_depth</code> fields in <code>browser_visits</code> were always NULL due to two bugs:</p>
+
+<p>1. <b>Native host dropped tree fields</b> — The <code>BrowserEvent</code> Codable struct in <code>engram-browser-bridge</code> was missing <code>browsingTreeId</code>, <code>parentTabId</code>, <code>treeDepth</code>, <code>navSequenceIndex</code>, and <code>previousURL</code>. Swift&#x27;s Codable silently drops undeclared fields during decode/re-encode, so these were never written to JSONL.</p>
+
+<p>2. <b>No tree bootstrap on service worker restart</b> — The in-memory <code>browsingTrees</code> dictionary started empty on every service worker wake. Existing tabs had no tree entries until they happened to navigate.</p>
+
+<h3>Changes</h3>
+<li>Add 5 missing fields to <code>BrowserEvent</code> struct in engram-browser-bridge</li>
+<li>Seed all open tabs via <code>initializeBrowsingTrees()</code> during service worker bootstrap</li>
+<li>Add round-trip test verifying tree fields survive native messaging serialization</li>
+<li>Strengthen browsing tree Playwright tests (88/88 pass)</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 09:38:40 +0000</pubDate>
+    <sparkle:version>93</sparkle:version>
+    <sparkle:shortVersionString>0.3.78</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.78/Ambient.Witness-0.3.78-macOS.zip"
+        sparkle:edSignature="g1yCh0qQPgz0NgSd88PacVDgU5MGeYAGpQkotr3dh1ME2U2Wk4ihZwBpQuYIaTC6mbxF/nF2IqHsXt9OWPZkAA=="
+        length="20123329"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
