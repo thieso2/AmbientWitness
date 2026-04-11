@@ -893,5 +893,32 @@
         length="20182323"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.82</title>
+    <description><![CDATA[<h2>MCP OAuth fix</h2>
+<li>Implement RFC 7591 Dynamic Client Registration (<code>POST /register</code>) so MCP clients can complete the OAuth flow</li>
+
+<h2>MCP tool filtering</h2>
+<li>Hide screenshot/OCR/media tools (<code>query_screenshots</code>, <code>get_screenshot</code>, <code>query_ocr_activity</code>, <code>search_screen_text</code>) when screenshots are disabled</li>
+<li>CLI: add <code>--no-screenshots</code> flag to <code>engram-mcp-server</code></li>
+
+<h2>CI</h2>
+<li>Release workflow only triggers on tags, removing redundant cache-warming builds on every push to main</li>
+
+<h2>iOS sync fixes</h2>
+<li><b>Stale cursors on fresh pairing</b>: first sync now ignores server-provided cursors, ensuring all records are pushed when pairing a new Mac (fixes &quot;23 pending&quot; instead of &quot;&gt;30k pending&quot;)</li>
+<li><b>locationStateLogs unbounded growth</b>: synced entries older than 7 days are now pruned after each sync cycle</li>
+<li><b>Desktop race condition</b>: newly paired Macs are detected and synced immediately instead of waiting up to 60 seconds for the next cycle</li>
+<li>New test suite: 11 tests covering sync pending counts, cursor logic, and all three bug fixes with mock HTTP client</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 19:05:16 +0000</pubDate>
+    <sparkle:version>101</sparkle:version>
+    <sparkle:shortVersionString>0.3.82</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.82/Ambient.Witness-0.3.82-macOS.zip"
+        sparkle:edSignature="ahZU2DPj9CSCn1Py+K76xqzS2ZMMCDkj2I3kAg0gBnYiG5OEg5ymiwJWT/pOFr3rm33jng36xFtkp5ctlyodDw=="
+        length="20183856"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
