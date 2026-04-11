@@ -876,5 +876,22 @@
         length="20176776"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.81</title>
+    <description><![CDATA[<h2>Fix OAuth for MCP clients</h2>
+
+<li>Implement RFC 7591 Dynamic Client Registration (<code>POST /register</code>)</li>
+<li>MCP clients (Claude Desktop, etc.) were blocked at the registration step — the server advertised a <code>registration_endpoint</code> but returned 501</li>
+<li>Clients can now complete the full OAuth 2.1 + PKCE flow to authenticate with the MCP server via GitHub</li>]]></description>
+    <pubDate>Sat, 11 Apr 2026 17:42:18 +0000</pubDate>
+    <sparkle:version>100</sparkle:version>
+    <sparkle:shortVersionString>0.3.81</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.81/Ambient.Witness-0.3.81-macOS.zip"
+        sparkle:edSignature="W3IJLwULELaEjhDKMgpM//JvL/ERTG1Krls1nhp/SqQEqdBFI7VX1NR0gPRpiEO+LNfVNzmMEI8yg9XfIafpDQ=="
+        length="20182323"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
