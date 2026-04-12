@@ -1046,5 +1046,22 @@
         length="20180634"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.92</title>
+    <description><![CDATA[<h2>Device management improvements</h2>
+
+<li><b>Devices tab</b> (renamed from &quot;Mobile&quot;) now shows all paired devices — iPhones, Macs, watches — with platform-specific icons</li>
+<li><b>Admin endpoint</b>: <code>DELETE /sync/v1/devices/{deviceID}</code> for remote device removal (bearer auth required)</li>
+<li>Mac devices paired via cloud sync now visible alongside iPhones</li>]]></description>
+    <pubDate>Sun, 12 Apr 2026 12:48:39 +0000</pubDate>
+    <sparkle:version>111</sparkle:version>
+    <sparkle:shortVersionString>0.3.92</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.92/Ambient.Witness-0.3.92-macOS.zip"
+        sparkle:edSignature="v36tqJ+UnbFHYZ6VaO/tC5/CID4/3uiQ3WunFDbA+CZQ0S5Dk07tmA39jJcaoUlJlbSOhp1eFfSQUf7py//RAw=="
+        length="20235465"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
