@@ -987,5 +987,24 @@
         length="20184746"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.89</title>
+    <description><![CDATA[<h2>Changes</h2>
+
+<li><b>iOS sync: cancellable sync &amp; snapshot-based counters</b> — Sync is now cancellable at every network call boundary. Pending counts are frozen at sync start (snapshot MAX(id) per table) and counted down as batches push, preventing the background refresh from overwriting them. After the batch loop, a re-snapshot detects new data and triggers another pass.</li>
+<li><b>iOS: always allow removing a paired Mac</b> — The &quot;Remove Mac&quot; button is no longer disabled during sync. Deleting a desktop cancels its in-flight sync and immediately updates the UI status.</li>
+<li><b>Server: accept locationStateLogs in phone sync</b> — The table schema existed (migration v4) but was missing from the server&#x27;s allowed table list, causing silent rejection and an infinite push loop on the phone.</li>
+<li><b>Phone-side cursor fallback</b> — When the server doesn&#x27;t return a cursor for a pushed table, the phone advances the cursor locally from the last record&#x27;s ID to prevent infinite loops.</li>
+<li><b>Serve /.well-known/openid-configuration</b> — ChatGPT&#x27;s MCP client uses OpenID Connect Discovery instead of RFC 8414. The server now serves the same OAuth metadata on both endpoints.</li>]]></description>
+    <pubDate>Sun, 12 Apr 2026 06:33:12 +0000</pubDate>
+    <sparkle:version>108</sparkle:version>
+    <sparkle:shortVersionString>0.3.89</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.89/Ambient.Witness-0.3.89-macOS.zip"
+        sparkle:edSignature="6nWLnlhHLX25QAgwBZM5M/ekNRKf1dxOYAog9jjBMM81gj2SUmBjoSYco060sOK9O5rS/l5PyGr4nUQjn/3mCw=="
+        length="20184712"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
