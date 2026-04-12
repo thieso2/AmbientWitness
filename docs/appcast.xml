@@ -1115,5 +1115,26 @@
         length="20249681"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.95</title>
+    <description><![CDATA[<h2>Sync progress UI</h2>
+
+<p>The Cloud Sync tab now shows per-table sync progress:</p>
+<li>Tables with pending rows shown in orange</li>
+<li>Pushed row counts shown in green</li>
+<li>All discovered tables listed (not just those pushed in the last cycle)</li>
+<li>Total table count in the header</li>
+
+<p>Also fixes the empty &quot;Tables&quot; box that appeared when sync was up to date.</p>]]></description>
+    <pubDate>Sun, 12 Apr 2026 18:35:00 +0000</pubDate>
+    <sparkle:version>114</sparkle:version>
+    <sparkle:shortVersionString>0.3.95</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.95/Ambient.Witness-0.3.95-macOS.zip"
+        sparkle:edSignature="jzeC4fEpZqIjQO5XkrtcxbId1Yhhrlr9JnM5WdoSV3wOcRzJoFCVxim+AzKBfO7bbego3w17r36eA/ZjmaLtDw=="
+        length="20277970"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
