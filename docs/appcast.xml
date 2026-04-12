@@ -1063,5 +1063,23 @@
         length="20235465"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.93</title>
+    <description><![CDATA[<h2>Fixes</h2>
+
+<li><b>Fix paired device not showing in iOS main view</b> — <code>@FetchAll</code> for <code>connectedDesktops</code> now reloads when the QR scanner sheet dismisses</li>
+<li><b>Devices tab</b> shows all paired devices (iPhones, Macs, watches) with platform icons</li>
+<li><b>Admin endpoint</b> <code>DELETE /sync/v1/devices/{deviceID}</code> for remote device removal</li>
+<li>5 new pairing e2e tests</li>]]></description>
+    <pubDate>Sun, 12 Apr 2026 13:20:24 +0000</pubDate>
+    <sparkle:version>112</sparkle:version>
+    <sparkle:shortVersionString>0.3.93</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.93/Ambient.Witness-0.3.93-macOS.zip"
+        sparkle:edSignature="SuxPBGn9BVzji++Syw/GufpwA28ExkhdwF1dSvW99Y3wIiWUU67kIETI1lx8ssefSKU+WleHRdHbOGGlriY7DQ=="
+        length="20235706"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
