@@ -1025,5 +1025,26 @@
         length="20185450"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.91</title>
+    <description><![CDATA[<h2>Stateless MCP transport for ChatGPT compatibility</h2>
+
+<p>Switches the MCP server from stateful (session-based SSE) to stateless (direct JSON responses). This fixes ChatGPT&#x27;s MCP client which sends fresh initialize requests on every tool call.</p>
+
+<h3>Changes</h3>
+<li>Use <code>StatelessHTTPServerTransport</code> — no session IDs, no SSE, accepts initialize at any time</li>
+<li>Empty probe POST returns 401 + <code>WWW-Authenticate</code> (was 400)</li>
+<li>Removed session rotation, restoration, and approval handler (net -85 lines)</li>
+<li>Includes Phase 1 &amp; 2 of iPhone cloud sync (setup tokens, invite flow, key management)</li>]]></description>
+    <pubDate>Sun, 12 Apr 2026 09:40:08 +0000</pubDate>
+    <sparkle:version>110</sparkle:version>
+    <sparkle:shortVersionString>0.3.91</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.91/Ambient.Witness-0.3.91-macOS.zip"
+        sparkle:edSignature="nhe4b2U8KL09dvPlNBrZo+uLZljkbzixMxhlCbLn4jry/2S62LVop1aFPTpLAE7JVy8RWej4IH8Ks57xKE9pDg=="
+        length="20180634"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
