@@ -1006,5 +1006,24 @@
         length="20184712"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.90</title>
+    <description><![CDATA[<h2>Fix MCP server compatibility with ChatGPT</h2>
+
+<p>Two issues prevented ChatGPT&#x27;s MCP client from completing the handshake:</p>
+
+<p>1. <b>Empty POST probe → 401 instead of 400</b>: ChatGPT sends an empty POST to <code>/mcp</code> to discover whether authentication is required. The server now runs the auth validation pipeline first, returning <code>401</code> with <code>WWW-Authenticate</code> instead of a generic <code>400</code> parse error.</p>
+
+<p>2. <b>Double-initialize grace period</b>: ChatGPT sends two <code>initialize</code> requests within milliseconds. The second one no longer triggers a destructive session rotation if the current session was created less than 5 seconds ago, preventing the first session&#x27;s SSE stream from being destroyed.</p>]]></description>
+    <pubDate>Sun, 12 Apr 2026 09:03:19 +0000</pubDate>
+    <sparkle:version>109</sparkle:version>
+    <sparkle:shortVersionString>0.3.90</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.90/Ambient.Witness-0.3.90-macOS.zip"
+        sparkle:edSignature="OjrxM3c7ma++yi8S8zqkQHs/fqNbTE4yor8r7nU7tv+gAP8j6t67PU4I6gInSKNAYEW5pnIol/R8w+kyCJNKBg=="
+        length="20185450"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
