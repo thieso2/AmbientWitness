@@ -1081,5 +1081,39 @@
         length="20235706"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.94</title>
+    <description><![CDATA[<h2>Mac-to-Cloud Sync + Shared Sync Module</h2>
+
+<h3>Shared HTTPSyncClient</h3>
+<li>Moved <code>HTTPSyncClient</code> from iOS-only <code>AmbientHTTPSync</code> to multi-platform <code>AmbientSyncCore</code></li>
+<li>Mac&#x27;s <code>CloudSyncController</code> now uses the shared client (removed 128 lines of duplication)</li>
+<li>iPhone sync unchanged</li>
+
+<h3>Go Server: Accept all tables</h3>
+<li>Replaced 17-table whitelist with a denylist — Mac&#x27;s 80+ index.sqlite tables are now accepted</li>
+<li>Cursors handler discovers tables dynamically from sqlite_master</li>
+
+<h3>Admin Panel: Mac Pairing</h3>
+<li>&quot;Invite Device&quot; for Mac shows a clickable &quot;Open Mac pairing page&quot; link</li>
+<li><code>/admin/pair</code> page with server URL + invite token, &quot;Copy Both&quot; button</li>
+<li>User pastes into Mac app&#x27;s Cloud tab to complete pairing</li>
+
+<h3>Also included</h3>
+<li><code>mcp.log</code> structured logging (tool calls, SQL queries, auth errors)</li>
+<li>Per-tenant activity log (lock/unlock, sync stats)</li>
+<li>Lock button + DB size in admin panel</li>
+<li>Go server: auto-add missing columns on schema evolution</li>
+<li>Fix GPS never activating on iPhone (significant location change now starts GPS)</li>]]></description>
+    <pubDate>Sun, 12 Apr 2026 17:47:27 +0000</pubDate>
+    <sparkle:version>113</sparkle:version>
+    <sparkle:shortVersionString>0.3.94</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.94/Ambient.Witness-0.3.94-macOS.zip"
+        sparkle:edSignature="ahg7Jub1N2EXjou2pC7W25wUbq5flpS7SFT7DGsaTRQrgeJva77aoveiNe1XtlmKb2uATO8hYxt4KwS+bPqpBg=="
+        length="20249681"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
