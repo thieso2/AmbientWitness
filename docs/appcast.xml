@@ -1173,5 +1173,26 @@
         length="20346156"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.97</title>
+    <description><![CDATA[<h2>What&#x27;s New</h2>
+
+<li><b>Bundle engram-cloud in macOS app</b> — The Go cloud server binary is now compiled and embedded in <code>Contents/Helpers/engram-cloud</code> during the Xcode build.</li>
+<li><b>Cloud Server UI</b> — New Cloud Server section on the Cloud tab with configuration form (listen address, data directory, auto-lock, OAuth, encryption flags), start/stop controls, and a real-time log viewer streaming stdout/stderr from the process.</li>
+<li><b>CI: Go toolchain</b> — GitHub Actions CI and release workflows now install Go via <code>setup-go</code> so the binary builds and gets signed/notarized alongside the app.</li>
+
+<h2>Notes</h2>
+
+<p>The embedded cloud server will eventually replace the built-in Swift MCP server. For now both coexist — the Cloud tab shows both the server controls and the existing sync client.</p>]]></description>
+    <pubDate>Mon, 13 Apr 2026 15:25:35 +0000</pubDate>
+    <sparkle:version>116</sparkle:version>
+    <sparkle:shortVersionString>0.3.97</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.97/Ambient.Witness-0.3.97-macOS.zip"
+        sparkle:edSignature="NP4FGzPSnjL/+8ZaHXBOCjqNDj/vy3wyznLg8Hfntu7VfPAT+0TPMFBNL48AuG4SnZT80gsfobWa1iFDc3+aCg=="
+        length="30922665"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
