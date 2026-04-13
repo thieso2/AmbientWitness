@@ -1136,5 +1136,42 @@
         length="20277970"
         type="application/octet-stream" />
 </item>
+            <item>
+    <title>Version 0.3.96</title>
+    <description><![CDATA[<h2>Phone manifest push + Location tracking fixes + Server MCP cleanup</h2>
+
+<h3>Phone manifest push</h3>
+<li>iPhone now pushes provider manifests (<code>POST /sync/v1/manifest</code>) before data sync</li>
+<li>5 providers declared: location, motion, browser, watch, share — each with SQL tool definitions</li>
+<li>Dynamic MCP tools (query_location, query_steps, query_activity, query_phone_browser, etc.) are now fully client-defined</li>
+<li><code>engram://catalog</code> resource populated with phone data descriptions and example questions</li>
+
+<h3>Location tracking robustness</h3>
+<li><b>CLMonitor departure geofence (80m):</b> Wakes the app when leaving the stationary region — reduces the &quot;blind start&quot; gap from ~500m to ~80m</li>
+<li><b>beginBackgroundTask on wake:</b> 25-second execution window for GPS cold start after significant location change</li>
+<li><b>Stale pedometer reset:</b> Discards accumulated spm average after &gt;120s suspension</li>
+<li><b>Floor change detection:</b> Elevator/escalator movement triggers GPS activation</li>
+<li><b>speedAccuracy gate:</b> GPS velocity veto only fires when speed exceeds uncertainty</li>
+<li><b>Orphaned span recovery:</b> Unclosed LocationSpans from app termination are closed on next launch</li>
+<li><b>Background indicator fix:</b> Blue pill only shown during active GPS, hidden during low-power monitoring</li>
+
+<h3>Server MCP cleanup</h3>
+<li>Removed 993 lines of hardcoded tool definitions and SQL queries (<code>tool_defs.go</code>, <code>tool_queries.go</code>)</li>
+<li>All MCP tools now come from device manifests or server-native tools (<code>list_devices</code>, <code>describe_schema</code>, <code>run_sql</code>)</li>
+<li>Native <code>run_sql</code> tool with explicit <code>device</code> parameter for cross-device queries</li>
+<li><code>--no-encrypt</code>, <code>--debug-token</code>, <code>--auto-unlock</code> flags for development workflows</li>
+
+<h3>Mac manifest</h3>
+<li>Expanded with full SQL tool definitions for all ~30 Mac providers</li>]]></description>
+    <pubDate>Mon, 13 Apr 2026 11:39:16 +0000</pubDate>
+    <sparkle:version>115</sparkle:version>
+    <sparkle:shortVersionString>0.3.96</sparkle:shortVersionString>
+    <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    <enclosure
+        url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.96/Ambient.Witness-0.3.96-macOS.zip"
+        sparkle:edSignature="QatBPtgxIwJ/oJV28rOTTGOWdZo9O3LSnMutVTVi1aUmurIPXpN7ZDRSJNX3L6Q/t3zorrWGB3O+dE9p6JjBDw=="
+        length="20346156"
+        type="application/octet-stream" />
+</item>
     </channel>
 </rss>
