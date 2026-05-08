@@ -1194,5 +1194,22 @@
         length="30922665"
         type="application/octet-stream" />
 </item>
+            <item>
+            <title>Version 0.3.101</title>
+            <description><![CDATA[<h2>Install</h2>
+
+<p>Download <code>Ambient.Witness-0.3.101-macOS.zip</code>, unzip, and move <code>Ambient Witness.app</code> to <code>/Applications</code>.</p>
+
+<p><b>SHA-256:</b> <code>4e9614fb485a5073860412dc2d98b67f546be5a33d3ff059c856cccb65fa0d54</code></p>]]></description>
+            <pubDate>Fri, 08 May 2026 20:13:45 +0000</pubDate>
+            <sparkle:version>125</sparkle:version>
+            <sparkle:shortVersionString>0.3.101</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/thieso2/AmbientWitness/releases/download/v0.3.101/Ambient.Witness-0.3.101-macOS.zip"
+                sparkle:edSignature="2LNYRHGbNO15pGPP8SIXH13ZfsBIGkPNgmHnEjaQGEO0c0b0wBhKKobMT/XNQIpGOoaT7nwRxRz2wzH5cSqABQ=="
+                length="30989404"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
